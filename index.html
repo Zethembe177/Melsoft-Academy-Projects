@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Milk Tart Recipe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Milk Tart</h1>
+
+    <div class="image-container">
+      <img src="https://www.google.com/imgres?q=milk%20tart&imgurl=https%3A%2F%2Fwww.tantalisemytastebuds.com%2Fwp-content%2Fuploads%2F2015%2F03%2FSouth-African-Milk-tart-88.jpg&imgrefurl=https%3A%2F%2Fwww.tantalisemytastebuds.com%2Ftraditional-south-african-milk-tart%2F&docid=Y6sYF4wDsvNETM&tbnid=pezEvk_WoyiMrM&vet=12ahUKEwiexNq2gM2MAxU1T0EAHUuMEpkQM3oECGMQAA..i&w=1000&h=667&hcb=2&ved=2ahUKEwiexNq2gM2MAxU1T0EAHUuMEpkQM3oECGMQAA" alt="Milk Tart" />
+    </div>
+
+    <div class="ingredients-section">
+      <h2>Ingredients</h2>
+      <ul>
+        <li>1/2 cup butter, softened</li>
+        <li>1 cup white sugar</li>
+        <li>1 egg</li>
+        <li>2 cups all-purpose flour</li>
+        <li>2 teaspoons baking powder</li>
+        <li>1 pinch salt</li>
+        <li>4 cups milk</li>
+        <li>1 teaspoon vanilla extract</li>
+        <li>1 tablespoon butter</li>
+        <li>2 1/2 tablespoons all-purpose flour</li>
+        <li>2 1/2 tablespoons cornstarch</li>
+        <li>1/2 cup white sugar</li>
+        <li>2 eggs, beaten</li>
+        <li>1/2 teaspoon ground cinnamon</li>
+      </ul>
+    </div>
+
+    <div class="instructions-section">
+      <h2>Instructions</h2>
+      <ol>
+        <li>Preheat oven to 350°F (175°C).</li>
+        <li>Cream together 1/2 cup butter and 1 cup sugar in a medium bowl.</li>
+        <li>Add 1 egg and beat until smooth.</li>
+        <li>In a separate bowl, mix 2 cups flour, baking powder, and salt.</li>
+        <li>Stir flour mixture into sugar mixture until combined.</li>
+        <li>Press mixture into bottom and sides of two 9-inch pie pans.</li>
+        <li>Bake for 10 to 15 minutes or until golden brown. Let cool.</li>
+        <li>In a large saucepan, combine milk, vanilla, and 1 tbsp butter. Bring to a boil, then remove from heat.</li>
+        <li>Mix flour, cornstarch, sugar, and eggs in a bowl until smooth.</li>
+        <li>Slowly whisk into hot milk. Return to heat and boil for 5 minutes, stirring constantly.</li>
+        <li>Pour custard into baked shells. Sprinkle cinnamon on top.</li>
+        <li>Chill before serving.</li>
+      </ol>
+    </div>
+<!-- Print Button -->
+<div class="rating-section">
+  <h2>Rate this Recipe</h2>
+  <span class="star" onclick="rate(1)">&#9733;</span>
+  <span class="star" onclick="rate(2)">&#9733;</span>
+  <span class="star" onclick="rate(3)">&#9733;</span>
+  <span class="star" onclick="rate(4)">&#9733;</span>
+  <span class="star" onclick="rate(5)">&#9733;</span>
+</div>
+
+<button class="print-btn" onclick="window.print()">Print Recipe</button>
+
+<script>
+  function rate(starCount) {
+    const stars = document.querySelectorAll('.star');
+    stars.forEach((star, index) => {
+      star.classList.toggle('selected', index < starCount);
+    });
+    alert(`Thanks! You rated this ${starCount} out of 5 stars.`);
+  }
+</script>
+
+  </div>
+</body>
+</html>
